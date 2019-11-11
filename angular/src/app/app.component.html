@@ -1,0 +1,3 @@
+<app-init-form (showResult)="showResultFunc($event)" (resultList)="getResultList($event)"></app-init-form>
+<app-result *ngIf="showResult && popularSearch && popularsSearch" (hideResult)="showResultFunc($event)"
+[popularSearch]="popularSearch" [popularsSearch]="popularsSearch"></app-result>

@@ -1,0 +1,38 @@
+.row{
+  margin:auto;
+    margin-top: 15px;
+    width: 300px;
+    border-radius: 5px;
+      height: 55px;
+      display: flex;
+      background-color: #353535;
+  }
+  .a{
+    display: flex;
+    margin-right: 5px;
+  }
+  .inRow{
+    margin-top: 10px;
+    width: 55px;
+  }
+  .inRow label:first-child{
+    color: white;
+    font-size: 80%;
+  }
+  .inRow label:nth-child(2){
+    color: #FFC000;
+    font-size: 50%;
+    display: block;
+    /*margin-top: 20px;
+    margin-right:0px; */
+  }
+  /* .l_source{
+    margin-right: 5px;
+  }
+  .l_dest{
+    margin-right: 20px;
+  }*/
+  .l_hits{
+    margin-right: 140px; 
+  } 
+  

@@ -1,0 +1,12 @@
+<div class="loadDiv">
+  <div class="src">
+    <label class="label">מוצא</label>
+    <input type="text" class="input" #ctrl="ngModel" [(ngModel)]="source">
+  </div>
+  <div class="dst">
+    <label class="label">יעד</label>
+    <input type="text" class="input" #ctrl2="ngModel" [(ngModel)]="dest">
+  </div>
+  <label class="label kavkav">-------------------------</label>
+  <button class="input btn" (click)="getDistance()">הצג את המרחק</button>
+</div>

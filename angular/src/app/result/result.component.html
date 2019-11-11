@@ -1,0 +1,27 @@
+<div class="result" >
+  <button class="btn2" (click)="hide()">סיום</button>
+  <div class="divRes" dir="rtl">
+    <div class="right">
+      <div class="innerDiv">
+        <label class="l_title">המרחק בק"מ</label>
+        <label>{{popularSearch.km}}</label>
+      </div>
+    </div>
+    <div class="left">
+      <div class="innerDiv">
+        <label class="l_title">המרחק הפופולרי ביותר</label>
+        <label >{{popularSearch.hits}}</label>
+      </div>
+      <div class="innerDiv1">
+        <label>{{popularSearch.source}}</label>
+        <span>|</span>
+        <label class="l_dest">{{popularSearch.dest}}</label>
+      </div>
+    </div>
+    <label class="l_title popular">רשימת התוצאות הפופולריות</label>
+    <div class="divResList">
+    <app-popular-search-item *ngFor="let i of popularsSearch" [item]=i>
+    </app-popular-search-item>
+    </div>
+  </div>
+</div>
